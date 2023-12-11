@@ -18,16 +18,16 @@
 <!--Navigation bar-->
 
 <nav>
-    <label for="nav-toggle" id="nav-toggle" type="checkbox">
-        <section class="logo"><a href="Homepage.html"><img src="./Resource/Homepage/logo.png" width="85" alt="logo"></a></section>
-        <section class="links">
+    <label for="nav-toggle" id="nav-toggle" type="checkbox"></label>
+        <section aria-label="navigation bar" class="logo"><a href="Homepage.html"><img src="Resource\Homepage\logo.png" width="85" alt="logo"></a></section>
+        <section aria-label="nav elements" class="links">
             <a href="Accomadation.html">ACCOMMODATION</a>
             <a href="Hotels.html">HOTEL</a>
            <a href="Experience.html">EXPERIENCE</a>
            <a href="Resturant.html">RESTURANT</a>
          <a href="Booking.html">BOOKING</a> 
         </section>
-        <label for="nav-toggle" class="ham-burger"><img src="./Resource/Homepage/hamburger-menu.png" width="40">
+        <label for="nav-toggle" class="ham-burger"><img src="Resource\Homepage\hamburger-menu.png" width="40">
         </label>
  </nav>
 <bookform>
@@ -37,16 +37,16 @@
            <!--Customer details-->
         <section aria-label="fullname" class="input-data">
             <label for="username">Full Name</label>
-            <input type="text" placeholder="Enter full name" id="username" name="usrdata" required>
+            <input type="text" placeholder="Enter full name" id="username" name="usrdata" required autocomplete>
         </section>
         <section aria-label="email address" class="input-data-column">
-            <section aria-label="email address ins" class="input-data">
+            <section class="input-data">
                 <label for="emailadd">Email Address</label>
-                <input type="email" placeholder="Enter your Email address" id="emailadd" name="usrdata" required>
+                <input type="email" placeholder="Enter your Email address" id="emailadd" name="usrdata" required autocomplete>
             </section>
             <section aria-label="phone number" class="input-data">
                 <label for="phonenum">Phone Number</label>
-                <input type="text" placeholder="Enter your phone number" id="phonenum" name="usrdata" required>
+                <input type="text" placeholder="Enter your phone number" id="phonenum" name="usrdata" required autocomplete>
             </section>
         </section>
         <!--Type of rooms-->
