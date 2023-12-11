@@ -451,7 +451,6 @@ input[type=checkbox]:checked ~ .check-guide-ins {
 .input-overall-column span{
     font-family:monospace;
     font-size: clamp(10px,1.3vw,250px);
-    text-decoration: underline;
 }
 fieldset {
     border: 1px solid rgba(0, 0, 0, 0.445);
