@@ -16,9 +16,10 @@
 </head>
 <body>
 <!--Navigation bar-->
+
 <nav>
-    <input id="nav-toggle" label="navtogglee" type="checkbox">
-        <section class="logo"><a href="Homepage.html"><img src="Resource\Homepage\logo.png" width="85" alt="logomain"></a></section>
+    <label for="nav-toggle" id="nav-toggle" type="checkbox">
+        <section aria-label="navigation bar" class="logo"><a href="Homepage.html"><img src="Resource\Homepage\logo.png" width="85" alt="logo"></a></section>
         <section class="links">
             <a href="Accomadation.html">ACCOMMODATION</a>
             <a href="Hotels.html">HOTEL</a>
@@ -26,101 +27,101 @@
            <a href="Resturant.html">RESTURANT</a>
          <a href="Booking.html">BOOKING</a> 
         </section>
-        <label for="nav-toggle" class="ham-burger"><img src="Resource\Homepage\hamburger-menu.png" alt="hamburger" width="40">
+        <label for="nav-toggle" class="ham-burger"><img src="Resource\Homepage\hamburger-menu.png" width="40">
         </label>
  </nav>
 <bookform>
-    <section class="book_container">
+    <section aria-label="booking container" class="book_container">
     <form id="bookform">
         <h2>BOOK NOW</h2>
            <!--Customer details-->
-        <section class="input-data">
+        <section aria-label="fullname" class="input-data">
             <label for="username">Full Name</label>
             <input type="text" placeholder="Enter full name" id="username" name="usrdata" required autocomplete>
         </section>
-        <section class="input-data-column">
+        <section aria-label="email address" class="input-data-column">
             <section class="input-data">
                 <label for="emailadd">Email Address</label>
                 <input type="email" placeholder="Enter your Email address" id="emailadd" name="usrdata" required autocomplete>
             </section>
-            <section class="input-data">
+            <section aria-label="phone number" class="input-data">
                 <label for="phonenum">Phone Number</label>
                 <input type="text" placeholder="Enter your phone number" id="phonenum" name="usrdata" required autocomplete>
             </section>
         </section>
         <!--Type of rooms-->
-        <section class="input-data-column">
-            <section class="input-data">
+        <section aria-label="room types" class="input-data-column">
+            <section aria-label="singlerooms" class="input-data">
                 <label for="singleroom">Single Rooms</label>
                 <input type="number" placeholder="No of Single rooms required" id="singleroom" name="roomtype" min="0" value="0" >
             </section>
-            <section class="input-data">
+            <section aria-label="doublerooms" class="input-data">
                 <label for="doubleroom">Double Rooms</label>
                 <input type="number" placeholder="No of Double rooms required" id="doubleroom" name="roomtype" min="0" value="0">
             </section>
-            <section class="input-data">
+            <section aria-label="trpilerooms" class="input-data">
                 <label for="trpileroom">Triple Rooms</label>
                 <input type="number" placeholder="No of Triple rooms required" id="trpileroom" name="roomtype" min="0" value="0">
             </section>
         </section>
         <!--Check-in and check-out dates-->
-        <section class="input-check-column">
-            <section class="check-data">
+        <section aria-label="calender section" class="input-check-column">
+            <section aria-label="check in date" class="check-data">
                 <check_label for="checkindate">Check In</check_label>
                 <input type="date" required id="checkindate" name="date">
             </section>
-            <section class="check-data">
+            <section aria-label="check out date" class="check-data">
                 <check_label for="checkoutdate">Check Out</check_label>
                 <input type="date" required id="checkoutdate" name="date">
             </section>
         </section>
         <!--Extra bed stuff-->
-        <section class="input-data-column">
-            <section class="input-data">
+        <section aria-label="extra beds and kids meal" class="input-data-column">
+            <section aria-label="extrabeds" class="input-data">
                 <label for="extrabed">Extra Beds</label>
                 <input type="number" placeholder="No of Extra beds (if needed)" id="extrabed" name="extra" min="0" value="0">
             </section>
-            <section class="input-data">
+            <section aria-label="kidsmeals" class="input-data">
                 <label for="kidmeal">No of Kids(Above 5 years)</label>
                 <input type="number" placeholder="For Kids meals" id="kidmeal" name="extra" min="0" value="0">
             </section>
         </section>
         <!--Extra requirement-->
         <h3>Extra Requirement</h3>
-        <section class="input-check-column-extra">       
-        <section class="check-extra">
+        <section aria-label="extra requirement" class="input-check-column-extra">       
+        <section aria-label="PoolView" class="check-extra">
                     
             <input type="checkbox" id="Poolview" name="extraView" value="PoolView" class="checkGroup">
-            <section class="check-extra-ins">
+            <section aria-label="pool view in" class="check-extra-ins">
                 <span>
                     Pool View
                 </span>
             </section>
         </section>
     
-        <section class="check-extra">
+        <section aria-label="GardenView" class="check-extra">
             <input type="checkbox" id="Gardenview" name="extraView" value="GardenView" class="checkGroup">
-            <section class="check-extra-ins">
+            <section aria-label="Gardenview in" class="check-extra-ins">
                 <span>
                     Garden View
                 </span>
             </section>
         </section>
 
-        <section class="check-extra">
+        <section aria-label="Oceanview" class="check-extra">
                     
             <input type="checkbox" id="Oceanview" name="extraView" value="OceaView" class="checkGroup">
-            <section class="check-extra-ins">
+            <section aria-label="Oceanview in" class="check-extra-ins">
                 <span>
                     Ocean View
                 </span>
             </section>
         </section>
 
-        <section class="check-extra">
+        <section aria-label="PatioView" class="check-extra">
                     
             <input type="checkbox" id="Patioview" name="extraView" value="PatioView" class="checkGroup">
-            <section class="check-extra-ins">
+            <section aria-label="PatioView in" class="check-extra-ins">
                 <span>
                     Patio View
                 </span>
@@ -128,40 +129,40 @@
         </section>
         
         </section>
-        <section class="input-check-column-extra">       
-            <section class="check-guide">
+        <section aria-label="extra addons" class="input-check-column-extra">       
+            <section aria-label="addons" class="check-guide">
                         
                 <input type="checkbox" id="AC" name="extrareq">
-                <section class="check-guide-ins">
+                <section aria-label="AC in" class="check-guide-ins">
                     <span>
                        A/C
                     </span>
                 </section>
             </section>
         
-            <section class="check-guide">
+            <section aria-label="wifi" class="check-guide">
                 <input type="checkbox" id="WIFI" name="extrareq">
-                <section class="check-guide-ins">
+                <section aria-label="wifi in" class="check-guide-ins">
                     <span>
                         WIFI
                     </span>
                 </section>
             </section>
     
-            <section class="check-guide">
+            <section aria-label="minibar" class="check-guide">
                         
                 <input type="checkbox" id="MiniBar" name="extrareq">
-                <section class="check-guide-ins">
+                <section aria-label="minibar in " class="check-guide-ins">
                     <span>
                         Mini Bar
                     </span>
                 </section>
             </section>
     
-            <section class="check-guide">
+            <section aria-label="gym" class="check-guide">
                         
                 <input type="checkbox" id="Gym" name="extrareq">
-                <section class="check-guide-ins">
+                <section aria-label="gym in" class="check-guide-ins">
                     <span>
                         GYM
                     </span>
@@ -169,17 +170,17 @@
             </section>
             
             </section>
-            <section class="input-promo-column">
-                <section class="input-data-promo">
+            <section aria-label="promo code outer border" class="input-promo-column">
+                <section aria-label="promo code inner border" class="input-data-promo">
                     <h3>Promo Code</h3>
                     <input type="text" placeholder="Enter the promo code" id="promocode">
                 </section>
             </section>
-            <section class="input-data-button">
+            <section aria-label="buttons outer border" class="input-data-button">
                 <a type="submit" class="btn-book" id="favbutt">FAVORITE</a>
                 <a type="submit" class="btn-book" id="loyaltybutt">LOYALTY</a>
             </section>
-            <section class="input-current-column">
+            <section aria-label="currentroomcost update" class="input-current-column">
                 <current-room>
                         <div id="currentroomcost">Current Room Booking</div>
                 </current-room>
@@ -187,48 +188,48 @@
             <button class="submit_button_overall" type="submit" id="booknow">Book Now</button>
     </form>
     </section>
-    <section class="Adventure_container">
+    <section aria-label="adventure form container" class="Adventure_container">
     <form id="adventureform">
         <!--Adventure Booking-->
         <h2>Adventure Booking</h2>
         <h3>Local Travellers</h3>
-        <section class="input-data-column-adv">
-            <section class="input-data">
+        <section aria-label="local adult container" class="input-data-column-adv">
+            <section aria-label="local adult" class="input-data">
                 <label for="localadult">Local Adult</label>
                 <input type="number" placeholder="Number of Local adults " id="localadult" name="tourist" min="0" value="0">
             </section>
-            <section class="input-data-hrs">
+            <section aria-label="local adult hrs " class="input-data-hrs">
                 <label for="localadulthrs">Hours</label>
                 <input type="number" placeholder="Number of hours" id="localadulthrs" name="tourist" min="0" value="0">
             </section>
         </section>
-        <section class="input-data-column-adv">
-            <section class="input-data">
+        <section aria-label="local kids container" class="input-data-column-adv">
+            <section aria-label="local kids number" class="input-data">
                 <label for="localkid">Local Kids</label>
                 <input type="number" placeholder="Number of Local kids " id="localkid" name="touristhrs" min="0" value="0">
             </section>
-            <section class="input-data-hrs">
+            <section aria-label="local kids hrss" class="input-data-hrs">
                 <label for="localkidhrs">Hours</label>
                 <input type="number" placeholder="Number of hours" id="localkidhrs" name="touristhrs" min="0" value="0">
             </section>
         </section>
         <h3>Foreign Travellers</h3>
-        <section class="input-data-column-adv">
-            <section class="input-data">
+        <section aria-label="Foreign adult container" class="input-data-column-adv">
+            <section aria-label="foreignadult count" class="input-data">
                 <label for="foreignadult">Foreign Adult</label>
                 <input type="number" placeholder="Number of Foreign adults" id="foreignadult" name="tourist" min="0" value="0">
             </section>
-            <section class="input-data-hrs">
+            <section aria-label="foreign adult hrs" class="input-data-hrs">
                 <label for="foreignadulthrs">Hours</label>
                 <input type="number" placeholder="Number of hours" id="foreignadulthrs" name="touristhrs" min="0" value="0">
             </section>
         </section>
-        <section class="input-data-column-adv">
-            <section class="input-data">
+        <section aria-label="foreignkid container" class="input-data-column-adv">
+            <section aria-label="foreignkids count" class="input-data">
                 <label for="foreignkid">Foreign Kids</label>
                 <input type="number" placeholder="Number of Foreign kids " id="foreignkid" name="tourist" min="0" value="0">
             </section>
-            <section class="input-data-hrs">
+            <section aria-label="foreign kids hrs" class="input-data-hrs">
                 <label for="foreignkidhrs">Hours</label>
                 <input type="number" placeholder="Number of hours" id="foreignkidhrs" name="touristhrs" min="0" value="0">
             </section>
@@ -236,11 +237,11 @@
 
     <!--Check Boxes-->
     <h3>Guide Requirement</h3>
-    <section class="input-check-column-guide">       
-    <section class="check-guide">
+    <section aria-label="guidereq container" class="input-check-column-guide">       
+    <section aria-label="guide req ins" class="check-guide">
                 
         <input type="checkbox" id="adultguide" name="guidereq">
-        <section class="check-guide-ins">
+        <section aria-label="adult guide" class="check-guide-ins">
             <span >
                 Adult Guide<br>
                 1000.00LKR<br>
@@ -248,10 +249,10 @@
         </section>
     </section>
 
-    <section class="check-guide">
+    <section aria-label="kids guide in" class="check-guide">
                 
         <input type="checkbox" id="kidguide" name="guidereq">
-        <section class="check-guide-ins">
+        <section aria-label="kids guide price" class="check-guide-ins">
             <span>
                 KID Guide<br>
                 500.00LKR <br>
@@ -260,18 +261,18 @@
     </section>
         </section>
         <h3>Booking Confirmation</h3>
-        <section class="input-check-column-guide">       
-        <section class="check-guide">
+        <section aria-label="confirm book container" class="input-check-column-guide">       
+        <section aria-label="confirm booking" class="check-guide">
                     
             <input type="checkbox" id="bookconfirm" name="confirmcheck" required>
-            <section class="check-guide-ins">
+            <section aria-label="click button" class="check-guide-ins">
                 <span>
                     Click ME
                 </span>
             </section>
         </section>
             </section>
-        <section class="input-current-column">
+        <section aria-label="current adventure booking cost" class="input-current-column">
             <current-room>
                     <div id="currentadventurecost">Current Adventure Booking</div>
             </current-room>
@@ -281,7 +282,7 @@
         <button class="submit_button" type="submit" id="bookadventure">Book Adventure</button>
     </form>
 </section>
-<section class="input-overall-column">
+<section aria-label="booking Summary container" class="input-overall-column">
     <span>Booking Summary</span>
         <fieldset>
             
@@ -294,8 +295,8 @@
 
 ‌<!--Footer-->
 <footer>
-    <section class="footer-logo"><a href="Homepage.html"><img src="Resource\Homepage\logo.png" width="95" alt="footer"></a></section>
-    <section class="footer-content">
+    <section aria-label="hotel logo" class="footer-logo"><a href="Homepage.html"><img src="Resource\Homepage\logo.png" width="95" alt="footer"></a></section>
+    <section aria-label="footer content" class="footer-content">
        <ul class="social">
         <li><a href="https://www.facebook.com/HikkaTranzbyCinnamon/"><img src="Resource\Social\facebook.png" width="30" alt="facebook"></a></li>
         <li><a href="https://www.instagram.com/hikkatranzbycinnamon/"><img src="Resource\Social\instagram.png" width="30" alt="instagram"></a></li>
@@ -304,7 +305,7 @@
         <li><a href="https://www.youtube.com/@CinnamonHotelsandResorts"><img src="Resource\Social\youtube.png" width="30" alt="youtube"></a></li>
        </ul>
     </section>
-    <section class="footer-bottom">
+    <section aria-label="Copyright container" class="footer-bottom">
         <p>Copyright ©;2023 CinnamonHotels. designed by Ruchira</p>
     </section>
  </footer>
