@@ -284,6 +284,8 @@ function outputoverallText()
 
     calculateRoomCost();
 
+    saveLoyaltyToLS();
+
     outputParagraph.innerHTML = 
 
     `
@@ -313,9 +315,7 @@ function outputoverallText()
 function submitButtonClick()
 {
 
-    saveLoyaltyToLS();
     outputoverallText();
-
 }
 
 //Event listner for book now button
