@@ -153,7 +153,6 @@ check_label{
     border-radius: 6px;
     text-align: center;
     color:#35434d;
-    font-weight: 10%;
     font-size: clamp(10px,1.3vw,250px);
 }
 .check-extra-ins{
@@ -273,7 +272,6 @@ current-room label{
     border-radius: 6px;
     text-align: center;
     color:#35434d;
-    font-weight: 10%;
     font-size: clamp(10px,1.3vw,250px);
 }
 .check-guideadv{
@@ -286,7 +284,6 @@ current-room label{
     border-radius: 6px;
     text-align: center;
     color:#35434d;
-    font-weight: 10%;
     font-size: clamp(10px,1.3vw,250px);
 }
 .check-guide-ins{
